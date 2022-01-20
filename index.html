@@ -11,9 +11,60 @@
   <body>
     <header>
       <div class="container">
-        <div class="logo">Logo Aqui</div>
-        <div class="menu"></div>
+        <div class="logo">INSERIR LOGO</div>
+        <div class="menu">
+          <nav>
+            <div class="menuMobile">
+              <div class="mm_line"></div>
+              <div class="mm_line"></div>
+              <div class="mm_line"></div>
+            </div>
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="#">Cadastro</a></li>
+              <li><a href="#">Entrar</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
+    <section id="formPage">
+      <div class="container column">
+        <h1>Cadastro de Usuário</h1>
+        <form>
+          <ul>
+            <div class="columnForm">
+              <li>
+                <label class="required" for="email">E-mail</label>
+                <input type="email" id="email" name="email" required />
+              </li>
+              <li>
+                <label class="required" for="confirmEmail">Repetir e-mail</label>
+                <input type="email" id="confirmEmail" name="confirmEmail" required />
+              </li>
+            </div>
+            <div class="columnForm">
+              <li>
+                <label class="required" for="password">Senha</label>
+                <input type="password" id="password" name="password" required />
+              </li>
+              <li>
+                <label class="required" for="confirmPassword">Confirmar Senha</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required />
+              </li>
+            </div>
+          </ul>
+          <br />
+          <br />
+          <br />
+          <fieldset>
+            <legend>Dados Pessoais</legend>
+          </fieldset>
+          <br />
+          <br />
+          <input type="submit" />
+        </form>
+      </div>
+    </section>
   </body>
 </html>
