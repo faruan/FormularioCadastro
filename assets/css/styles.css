@@ -82,7 +82,7 @@ form {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: aqua;
+  background-color: #e8e8e8;
   min-height: 500px;
 }
 
