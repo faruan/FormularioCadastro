@@ -125,4 +125,29 @@ form input {
   padding: 5px;
 }
 
+legend {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.radioPersonal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.radioPersonal input {
+  width: 10px;
+  height: 30px;
+  border: 1px solid #d1d1c1;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.radioPersonal label {
+  font-size: 16px;
+  margin: 0 20px 0 10px;
+}
+
 /* #endregion */
