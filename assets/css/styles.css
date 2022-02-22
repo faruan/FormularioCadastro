@@ -19,6 +19,7 @@ header {
   justify-content: space-between;
   width: 990px;
 }
+
 .logo {
   color: #d1d1c1;
 }
@@ -50,6 +51,7 @@ nav ul {
 }
 
 nav a {
+  display: block;
   text-decoration: none;
   text-transform: uppercase;
   color: #d1d1c1;
@@ -83,7 +85,6 @@ form {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 500px;
 }
 
 .required:after {
@@ -166,10 +167,7 @@ legend {
 
 fieldset {
   margin: 10px;
-}
-
-.flex {
-  display: flex;
+  max-width: 350px;
 }
 
 #state,
@@ -183,6 +181,11 @@ fieldset {
 
 .send {
   background-color: #0f0;
+}
+
+.containerField {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* #endregion */
@@ -244,3 +247,53 @@ footer {
 }
 
 /* #endregion */
+
+@media (max-width: 960px) {
+  header .container {
+    flex-direction: row;
+  }
+
+  nav ul {
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+  }
+
+  .containerField {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header {
+    height: auto;
+  }
+
+  form ul,
+  fieldset {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav a {
+    color: #fff;
+    text-align: center;
+    background-color: #2f3136;
+  }
+
+  input {
+    max-width: 200px;
+  }
+
+  .logo {
+    padding-left: 20px;
+  }
+
+  .menuMobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
