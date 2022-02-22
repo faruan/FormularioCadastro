@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <script src="./assets/js/scripts.js" type="text/javascript"></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
     <title>Cadastro de Usuário</title>
   </head>
   <body>
@@ -57,26 +63,108 @@
           <br />
           <br />
           <br />
-          <fieldset>
-            <legend>Dados Pessoais</legend>
-            <ul class="column">
-              <li class="radioPersonal">
-                <input type="radio" id="individual" name="personal" value="individual" checked />
-                <label for="individual">Pessoa Física</label>
-                <input type="radio" id="legalEntity" name="personal" value="legalEntity" />
-                <label for="legalEntity">Pessoa Jurídica</label>
-              </li>
-              <li>
-                <label class="required" for="name">Nome</label>
-                <input type="text" id="name" name="name" required />
-              </li>
-            </ul>
-          </fieldset>
+          <div class="flex">
+            <fieldset>
+              <legend>Dados Pessoais&nbsp;</legend>
+              <ul class="column">
+                <li class="radioPersonal">
+                  <input type="radio" id="individual" name="personal" value="individual" checked />
+                  <label for="individual">Pessoa Física</label>
+                  <input type="radio" id="legalEntity" name="personal" value="legalEntity" />
+                  <label for="legalEntity">Pessoa Jurídica</label>
+                </li>
+                <li>
+                  <label class="required" for="name">Nome</label>
+                  <input type="text" id="name" name="name" required />
+                </li>
+                <li>
+                  <label class="required" for="lastName">Sobrenome</label>
+                  <input type="text" id="lastName" name="lastName" required />
+                </li>
+                <li>
+                  <label class="required" for="sexo">Sexo</label>
+                  <select>
+                    <option>Selecione...</option>
+                    <option value="M">Masculino</option>
+                    <option value="F">Feminino</option>
+                  </select>
+                </li>
+                <li>
+                  <label class="required" for="date_birth">Data de Nascimento</label>
+                  <input type="date" required />
+                </li>
+                <li>
+                  <label class="required" for="cpf">CPF</label>
+                  <input
+                    type="text"
+                    id="cpf"
+                    pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+                    placeholder="___.___.___-__"
+                    required
+                  />
+                </li>
+                <li>
+                  <label class="required" for="telephone">Telefone</label>
+                  <input type="tel" id="telephone" placeholder="( __ ) ______-_____" required />
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Endereço&nbsp;</legend>
+              <ul class="column">
+                <li>
+                  <label for="city">Cidade</label>
+                  <input type="text" id="city" name="city" />
+                </li>
+                <li>
+                  <label for="state">Estado</label>
+                  <input type="text" id="state" name="state" size="2" />
+                </li>
+                <li>
+                  <label for="cep">CEP</label>
+                  <input type="text" id="cep" name="cep" placeholder="________-____" />
+                </li>
+                <li>
+                  <label for="street">Rua</label>
+                  <input type="text" id="street" name="street" />
+                </li>
+                <li>
+                  <label for="sNumber">Número</label>
+                  <input type="text" id="sNumber" name="sNumber" />
+                </li>
+                <li>
+                  <label for="complement">Complemento</label>
+                  <input type="text" id="complement" name="complement" />
+                </li>
+              </ul>
+            </fieldset>
+          </div>
           <br />
           <br />
-          <input type="submit" />
+          <input class="send" type="submit" />
         </form>
       </div>
     </section>
+    <footer>
+      <div class="container flexColumn">
+        <div class="footer_area">
+          <div id="social_media">
+            <a href="https://www.facebook.com/filipe.aruan/" target="_blank">
+              <i class="fab fa-facebook fa-2x"></i>
+            </a>
+            <a href="https://www.instagram.com/filipearuan/" target="_blank">
+              <i class="fab fa-instagram fa-2x"></i>
+            </a>
+            <a href="https://twitter.com/FilipeAruan" target="_blank">
+              <i class="fab fa-twitter fa-2x"></i>
+            </a>
+            <a href="https://github.com/faruan" target="_blank">
+              <i class="fab fa-github fa-2x"></i>
+            </a>
+          </div>
+        </div>
+        <div class="footer_copy">&copy; 2021 FARUAN - Todos os direitos reservados</div>
+      </div>
+    </footer>
   </body>
 </html>

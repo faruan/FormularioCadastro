@@ -71,6 +71,7 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   min-height: 670px;
+  background-color: #e8e8e8;
 }
 
 h1 {
@@ -82,7 +83,6 @@ form {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #e8e8e8;
   min-height: 500px;
 }
 
@@ -106,14 +106,8 @@ form ul {
 
 form li {
   display: flex;
-  justify-content: right;
   align-items: center;
   padding: 5px;
-}
-
-form label {
-  font-size: 16px;
-  margin-right: 10px;
 }
 
 form input {
@@ -123,6 +117,22 @@ form input {
   border: 1px solid #d1d1c1;
   border-radius: 5px;
   padding: 5px;
+}
+
+form select {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 200px;
+  height: 30px;
+  border: 1px solid #d1d1c1;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+form label {
+  font-size: 16px;
+  width: 110px;
+  text-align: right;
+  margin-right: 10px;
 }
 
 legend {
@@ -146,8 +156,91 @@ legend {
 }
 
 .radioPersonal label {
-  font-size: 16px;
   margin: 0 20px 0 10px;
+  text-align: left;
+}
+
+#cpf {
+  width: 250px;
+}
+
+fieldset {
+  margin: 10px;
+}
+
+.flex {
+  display: flex;
+}
+
+#state,
+#sNumber {
+  width: 80px;
+}
+
+#cep {
+  width: 150px;
+}
+
+.send {
+  background-color: #0f0;
+}
+
+/* #endregion */
+
+/* #region Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+.flexColumn {
+  flex-direction: column;
+}
+
+.footer_area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#social_media {
+  display: flex;
+  height: 50px;
+  width: 180px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fa-facebook {
+  color: #3b5998;
+  background-image: linear-gradient(to bottom, transparent 20%, white 20%, white 93%, transparent 93%);
+  background-size: 40%;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+}
+
+.fa-instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fa-twitter {
+  color: #00acee;
+}
+
+.fa-github {
+  color: #171515;
+}
+
+.footer_copy {
+  color: #5c5c5c;
+  font-size: 13px;
+  margin-top: 10px;
+  text-align: center;
 }
 
 /* #endregion */
