@@ -2,14 +2,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 /* #region Header */
+
 header {
   display: flex;
   justify-content: center;
-  height: 100px;
+  height: 80px;
+  background-color: #2f3136;
 }
 
 .container {
@@ -17,4 +19,281 @@ header {
   justify-content: space-between;
   width: 990px;
 }
+
+.logo {
+  color: #d1d1c1;
+}
+.logo,
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.menuMobile {
+  display: none;
+  width: 40px;
+  height: 40px;
+  margin: 40px 20px 40px 0;
+}
+
+.mm_line {
+  height: 3px;
+  background-color: #39aae1;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #d1d1c1;
+  font-size: 18px;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background: #0071b7;
+  color: #fff;
+}
 /* #endregion */
+
+/* #region FormPage */
+
+#formPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 670px;
+  background-color: #e8e8e8;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.required:after {
+  content: ' *';
+  color: #f00;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.columnForm {
+  padding: 10px;
+  flex-direction: column;
+}
+
+form ul {
+  display: flex;
+}
+
+form li {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+form input {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 300px;
+  height: 30px;
+  border: 1px solid #d1d1c1;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+form select {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 200px;
+  height: 30px;
+  border: 1px solid #d1d1c1;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+form label {
+  font-size: 16px;
+  width: 110px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+legend {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.radioPersonal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.radioPersonal input {
+  width: 10px;
+  height: 30px;
+  border: 1px solid #d1d1c1;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.radioPersonal label {
+  margin: 0 20px 0 10px;
+  text-align: left;
+}
+
+#cpf {
+  width: 250px;
+}
+
+fieldset {
+  margin: 10px;
+  max-width: 350px;
+}
+
+#state,
+#sNumber {
+  width: 80px;
+}
+
+#cep {
+  width: 150px;
+}
+
+.send {
+  background-color: #0f0;
+}
+
+.containerField {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* #endregion */
+
+/* #region Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+.flexColumn {
+  flex-direction: column;
+}
+
+.footer_area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#social_media {
+  display: flex;
+  height: 50px;
+  width: 180px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fa-facebook {
+  color: #3b5998;
+  background-image: linear-gradient(to bottom, transparent 20%, white 20%, white 93%, transparent 93%);
+  background-size: 40%;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+}
+
+.fa-instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fa-twitter {
+  color: #00acee;
+}
+
+.fa-github {
+  color: #171515;
+}
+
+.footer_copy {
+  color: #5c5c5c;
+  font-size: 13px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* #endregion */
+
+@media (max-width: 960px) {
+  header .container {
+    flex-direction: row;
+  }
+
+  nav ul {
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+  }
+
+  .containerField {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header {
+    height: auto;
+  }
+
+  form ul,
+  fieldset {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav a {
+    color: #fff;
+    text-align: center;
+    background-color: #2f3136;
+  }
+
+  input {
+    max-width: 200px;
+  }
+
+  .logo {
+    padding-left: 20px;
+  }
+
+  .menuMobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
